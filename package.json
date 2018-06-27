@@ -47,7 +47,8 @@
     "posttest": "tsc -p . --noEmit && tslint -p . -t stylish",
     "prepack": "rm -rf lib && tsc",
     "prepare": "rm -rf lib && tsc",
-    "test": "echo NO TESTS"
+    "test": "echo NO TESTS",
+    "lint": "tslint -p ."
   },
   "types": "lib/index.d.ts"
 }

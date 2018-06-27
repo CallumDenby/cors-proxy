@@ -1,7 +1,7 @@
 import {IncomingMessage} from 'http'
 import * as cors from 'micro-cors'
 import fetch from 'node-fetch'
-import qs from 'querystring'
+import {stringify} from 'querystring'
 import {parse} from 'url'
 
 import {IReq} from './server'
@@ -9,7 +9,7 @@ import {IReq} from './server'
 const handler = async (req: IncomingMessage) => {
   const {query, pathname} = parse(req.url || '', true)
 
-  const querystring = Object.keys(query).length > 0 ? `?${qs.stringify(query)}` : ''
+  const querystring = Object.keys(query).length > 0 ? `?${stringify(query)}` : ''
 
   const url = `${(req as IReq).proxyUrl}${pathname}${querystring}`
   try {

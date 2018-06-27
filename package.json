@@ -1,7 +1,7 @@
 {
   "name": "@callumdenby/cors-proxy",
   "description": "A cli to run a cors proxy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Callum Denby @CallumDenby",
   "bin": {
     "cors": "./bin/run"

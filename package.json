@@ -1,12 +1,12 @@
 {
-  "name": "cors-cli",
+  "name": "@callumdenby/cors-proxy",
   "description": "A cli to run a cors proxy",
   "version": "0.0.0",
   "author": "Callum Denby @CallumDenby",
   "bin": {
     "cors": "./bin/run"
   },
-  "bugs": "https://github.com/CallumDenby/cors-cli/issues",
+  "bugs": "https://github.com/CallumDenby/cors-proxy/issues",
   "dependencies": {
     "@oclif/command": "^1.4.34",
     "@oclif/config": "^1.6.33",
@@ -33,7 +33,7 @@
     "/bin",
     "/lib"
   ],
-  "homepage": "https://github.com/CallumDenby/cors-cli",
+  "homepage": "https://github.com/CallumDenby/cors-proxy",
   "keywords": [
     "oclif"
   ],
@@ -42,7 +42,7 @@
   "oclif": {
     "bin": "cors"
   },
-  "repository": "CallumDenby/cors-cli",
+  "repository": "CallumDenby/cors-proxy",
   "scripts": {
     "posttest": "tsc -p . --noEmit && tslint -p . -t stylish",
     "prepack": "rm -rf lib && tsc",

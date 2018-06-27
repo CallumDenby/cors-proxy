@@ -47,7 +47,7 @@ jobs:
 
 workflows:
   version: 2
-  "cors-cli":
+  "cors-proxy":
     jobs:
       - node-latest
       - node-8
